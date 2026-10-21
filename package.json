@@ -1,0 +1,42 @@
+{
+  "name": "scenebridge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "tsx watch server/main.ts",
+    "start": "node --import tsx server/main.ts",
+    "build": "tsx scripts/build.ts",
+    "test": "tsx --test tests/*.test.ts",
+    "test:browser": "PLAYWRIGHT_BROWSERS_PATH=.local/playwright playwright test",
+    "media:build": "python3 scripts/render-mystery.py",
+    "media:narrate": "node scripts/narrate-offline.mjs",
+    "aws:prepare": "tsx scripts/aws-prepare.ts",
+    "aws:storage": "tsx scripts/aws-storage.ts",
+    "aws:check": "tsx scripts/aws-check.ts",
+    "android:setup": "python3 scripts/android-tools.py setup",
+    "android:build": "python3 scripts/android-tools.py build",
+    "android:emulator": "python3 scripts/android-tools.py emulator",
+    "package:demo": "python3 scripts/package-demo.py"
+  },
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.900.0",
+    "@aws-sdk/client-polly": "^3.900.0",
+    "@aws-sdk/client-s3": "^3.900.0",
+    "@aws-sdk/client-sts": "^3.900.0",
+    "@aws-sdk/client-transcribe": "^3.900.0",
+    "@aws-sdk/s3-request-presigner": "^3.900.0",
+    "@fastify/static": "^10.1.6",
+    "fastify": "^5.6.0",
+    "dotenv": "^17.2.0",
+    "zod": "^4.1.0"
+  },
+  "devDependencies": {
+    "@echogarden/espeak-ng-emscripten": "^0.3.0",
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^24.7.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}

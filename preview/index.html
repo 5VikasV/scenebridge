@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SceneBridge · Stay in the story</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="/" aria-label="SceneBridge home"><span class="brand-icon">▷</span><span>scene<span class="light">bridge</span></span></a>
+    <div class="header-right"><span class="mode" id="mode">CONNECTING</span><span class="preview-label">BROWSER PREVIEW</span></div>
+  </header>
+  <main>
+    <section class="cinema" aria-label="Video player">
+      <div class="film-topline"><span>SCENEBRIDGE ORIGINALS</span><span>A SHORT MYSTERY IN FIFTEEN MOMENTS</span></div>
+      <div class="screen-wrap">
+        <video id="video" playsinline preload="metadata" aria-label="The Last Screening"><track id="captions" kind="captions" srclang="en" label="English" default></video>
+        <div class="screen-label" id="screen-label">THE LAST SCREENING <span>ONE LAST NIGHT AT THE ORPHEUM</span></div>
+        <span class="replay-badge" id="replay-badge" hidden>EARLIER SCENE</span>
+      </div>
+      <div class="timeline-labels"><span id="position">00:00</span><span id="play-state">READY WHEN YOU ARE</span><span>03:00</span></div>
+      <input type="range" id="seek" min="0" max="180" step="0.1" value="0" aria-label="Playback position">
+      <div class="transport"><button class="play" id="play">▶ <span>Play film</span></button><button id="back">−10s</button><button id="forward">+10s</button><button id="cc" aria-pressed="true">CC</button><span class="transport-hint">Make yourself comfortable.</span></div>
+      <div class="film-info"><div><div class="eyebrow">TONIGHT'S FEATURE</div><h1 id="title">The Last Screening</h1><p id="subtitle">One cinema. One missing key. A reason still in the dark.</p></div><span class="duration">3 MIN<br><span>ORIGINAL SHORT</span></span></div>
+      <div class="content-note"><span class="note-dot"></span><span>Original illustrated mystery · English captions · No external film knowledge required</span></div>
+    </section>
+    <aside class="companion" aria-label="Viewing companion">
+      <div class="eyebrow teal"><span class="spark">✧</span> YOUR VIEWING COMPANION</div>
+      <div class="companion-heading"><h2 id="heading">Stay in<br>the story.</h2><span class="orbit">✧</span></div>
+      <p class="intro" id="intro">Missed a moment? Find the thread again, without looking ahead.</p>
+      <div class="boundary"><span class="shield">◇</span><div><strong id="boundary-title">Your moment. Your context.</strong><span id="boundary-detail">Later passages stay out of the answer.</span></div><span class="boundary-dot"></span></div>
+      <div class="actions" id="actions"><button id="recap"><span class="action-icon">↶</span><span><strong>Catch me up</strong><small>A recap of the last minute</small></span><span class="arrow">↗</span></button><button id="explain"><span class="action-icon">✧</span><span><strong>Explain this scene</strong><small>Connect the moments you've seen</small></span><span class="arrow">↗</span></button></div>
+      <form id="question-form"><label for="question">OR ASK SOMETHING SPECIFIC</label><div class="question-wrap"><input id="question" maxlength="600" placeholder="Why did Mira hide the key?" autocomplete="off"><button id="ask" aria-label="Ask SceneBridge" type="submit">↑</button></div></form>
+      <section id="response" aria-live="polite" hidden><div class="eyebrow" id="response-label">FINDING THE THREAD</div><p id="answer"></p><div id="evidence"></div><button id="resume">▶ Back to the story</button></section>
+      <div class="fixture-note" id="fixture-note">OFFLINE FIXTURE <span>Extracted transcript passages. No AI or AWS calls.</span></div>
+      <div class="aside-footer">A LITTLE CONTEXT GOES A LONG WAY.</div>
+    </aside>
+  </main>
+  <footer><span>WATCH. WONDER. PICK UP WHERE YOU LEFT OFF.</span><span>Browser development preview · Submission demo uses the native TV app</span></footer>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "id": "the-last-screening",
+  "title": "The Last Screening",
+  "subtitle": "One cinema. One missing key. A reason still in the dark.",
+  "durationMs": 180000,
+  "version": "1.0.0",
+  "passages": [
+    {"id":"p01","startMs":3000,"endMs":11000,"text":"At midnight, the old Orpheum cinema will close forever. Archivist Mira arrives carrying its only surviving original film reel."},
+    {"id":"p02","startMs":15000,"endMs":23000,"text":"Projectionist Tomas promises one final screening. He places a brass projector key on the desk and goes downstairs to welcome the audience."},
+    {"id":"p03","startMs":27000,"endMs":35000,"text":"Alone in the projection room, Mira picks up the brass key and hides it inside her coat. She gives no explanation."},
+    {"id":"p04","startMs":39000,"endMs":47000,"text":"Tomas returns to find the key missing. Mira says they must wait. Outside the booth, the audience begins to grow restless."},
+    {"id":"p05","startMs":51000,"endMs":59000,"text":"A faint smell of burnt acetate hangs beside the projector. Mira notices a curled strip of test film in the wastebasket."},
+    {"id":"p06","startMs":63000,"endMs":71000,"text":"Tomas thinks the key fell behind the desk. He searches the floor while Mira studies an old maintenance card on the wall."},
+    {"id":"p07","startMs":75000,"endMs":83000,"text":"The card records a warning from yesterday: inspect the cooling assembly before the next screening. The repair box beneath it is still sealed."},
+    {"id":"p08","startMs":87000,"endMs":95000,"text":"The cinema clock strikes a quarter to midnight. Tomas asks Mira whether she trusts him with the reel. She says that she does."},
+    {"id":"p09","startMs":99000,"endMs":107000,"text":"Mira asks Tomas to listen to the projector without starting the film. He switches on the power. The lamp hums in the booth."},
+    {"id":"p10","startMs":111000,"endMs":119000,"text":"Something familiar is absent: the cooling fan makes no sound. Tomas opens the side panel and finds a disconnected wire."},
+    {"id":"p11","startMs":123000,"endMs":131000,"text":"Tomas looks at the curled test strip again. He lowers the lamp switch and tells the audience the screening will be delayed."},
+    {"id":"p12","startMs":135000,"endMs":143000,"text":"Mira takes the brass key from her coat and sets it between them. Tomas asks why she hid it instead of saying something."},
+    {"id":"p13","startMs":147000,"endMs":155000,"text":"Mira explains that she hid the key to prevent the damaged projector from burning the only surviving reel. She needed time to confirm the fault."},
+    {"id":"p14","startMs":159000,"endMs":167000,"text":"Tomas reconnects the cooling fan and tests the machine with blank leader film. The fan spins. Mira hands him the brass key."},
+    {"id":"p15","startMs":171000,"endMs":179000,"text":"The final screening begins just before midnight. On the screen, the cinema appears on its opening night, alive with people who once called it home."}
+  ]
+}
